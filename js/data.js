@@ -1,14 +1,39 @@
 const account = [
-    { spalis: 10, income: 150 },
-    { sausis: 1, income: 200, expense: 50 },
-    { kovas: 3, income: 450, expense: 200 },
-    { liepa: 7, expense: 50 },
-    { vasaris: 2, income: 50 },
-    { geguze: 5, income: 150, expense: 50 },
-    { rugsejis: 9, income: 700, expense: 400 },
-    { balandis: 4, income: 10, expense: 300 },
-    { birzelis: 6, expense: 50 },
-    { lapkritis: 11, income: 150, expense: 30 },
-    { rugpjutis: 8, income: 450, expense: 120 },
-    { gruodis: 12, expense: 200 }
+    { month: Spalis, income: 150 },
+    { month: Sausis, income: 200, expense: 50 },
+    { month: Kovas, income: 450, expense: 200 },
+    { month: Liepa, expense: 50 },
+    { month: Vasaris, income: 50 },
+    { month: Geguze, income: 150, expense: 50 },
+    { month: Rugsejis, income: 700, expense: 400 },
+    { month: Balandis, income: 10, expense: 300 },
+    { month: Birzelis, expense: 50 },
+    { month: Lapkritis, income: 150, expense: 30 },
+    { month: Rugpjutis, income: 450, expense: 120 },
+    { month: Gruodis, expense: 200 }
 ];
+
+
+
+
+
+console.log(account);
+const DOM = document.querySelector('.table-content');
+console.log(DOM);
+
+
+    let HTML ='';
+    for (let i = 0; i < account.length; i++) {
+    const data = account.length[i];
+    HTML += ` <div class="table-row">
+    <div class="cell">1</div>
+    <div class="cell">${data.month}</div>
+    <div class="cell">150.00 Eur</div>
+    <div class="cell">-</div>
+    <div class="cell">150.00 Eur</div>
+</div>`;
+
+    
+    DOM.innerHTML = HTML;
+console.log(data);
+}
