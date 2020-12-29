@@ -13,19 +13,7 @@ const account = [
     { month: 12, expense: 200 }
 ];
 
-const menesiai = [ 'sausis', 'vasaris', 'kovas', 'balandis', 'geguze', 'birzelis', 'liepa', 'rugpjutis', 'rugsejis', 'spalis', 'lapkritis', 'gruodis']
-const DOM = document.querySelector('.table-content');
-let HTML ='';
-for (let i = 0; i < menesiai.length; i++) {
-    const data = menesiai.length[i];
-    
-    HTML += ` <div class="table-row">
-    <div class="cell">1</div>
-    <div class="cell">${data}</div>
-    <div class="cell">150</div>
-    <div class="cell">-</div>
-    <div class="cell">150.00 Eur</div>
-    </div>`;
-}
-    DOM.innerHTML = HTML;
-console.log(HTML);
+const menesiai = [ 'sausis', 'vasaris', 'kovas', 'balandis', 'geguze', 'birzelis',
+ 'liepa', 'rugpjutis', 'rugsejis', 'spalis', 'lapkritis', 'gruodis'];
+
+ export { account, menesiai }
